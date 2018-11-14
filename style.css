@@ -49,14 +49,15 @@ body {
 }
 
 .image-gallery {
-    width: 14.5vw;
+    width: 13.5vw;
     height: 7vw;
-    border: 2px solid #fff;;
+    border: 2px solid #fff;
+    ;
     margin: 1vw;
 }
 
 .image-gallery:hover {
-    width: 14.6vw;
+    width: 13.6vw;
     height: 7.1vw;
     border: none;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.9);
@@ -68,3 +69,17 @@ img {
     width: 100%;
     height: 100%;
 }
+
+#splash {
+    position: absolute;
+    display: none;
+    z-index: 9999;
+    width: 60%;
+    height: 60%;
+    background-color: rgba(218, 219, 219, 0.82);
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+}
+
