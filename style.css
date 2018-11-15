@@ -8,6 +8,7 @@ body {
     grid-template-columns: 15% 1fr 10%;
     height: 100vh;
     grid-gap: 0.5vw;
+    margin: 0;
 }
 
 #logo {
@@ -71,15 +72,50 @@ img {
 }
 
 #splash {
-    position: absolute;
+    position: fixed;
     display: none;
     z-index: 9999;
-    width: 60%;
-    height: 60%;
-    background-color: rgba(218, 219, 219, 0.82);
-    top: 20%;
-    bottom: 20%;
-    left: 20%;
-    right: 20%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    }
+
+#splash-image {
+    display: none;
+    position: relative; 
+ 	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    background-color: beige;
+    width: 80%;
+    height: 80%;
+    animation: fade 0.8s;
 }
 
+@keyframes fade {
+0% {opacity: 0.1;}
+100% {opacity: 1;}
+}
+
+#splsh {
+}
+
+#splash > span {
+    position: fixed;
+    display: inline-block;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: aliceblue;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#splash > span:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+}
