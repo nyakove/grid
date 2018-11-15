@@ -27,8 +27,8 @@ function animate() {
 function observer_test() {
     let target = document.querySelector('#splash');
 
-    function callback(mutationsList, observer) {
-        console.log('Mutation!')
+    function callback() {
+        //console.log('Mutation!')
         //document.getElementById("test").innerHTML = '<div style=\'width: 50%; height: 50%; background-color: green;\'></div>'
         document.getElementById('splash-image').style.display = 'block';
     }
