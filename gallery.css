@@ -107,6 +107,26 @@ img {
     filter: grayscale(80%);
 }
 
+#current > img {
+    filter: grayscale(0%);
+}
+
 .splash-items > img:hover {
     filter: grayscale(0%);
+}
+
+#left {
+    position: fixed;
+    top: 40%;
+    left: 1vw;
+}
+
+#right {
+    position: fixed;
+    top: 40%;
+    right: 1vw;
+}
+
+.arrow {
+    width: 80px;
 }
